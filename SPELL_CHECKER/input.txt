@@ -1,0 +1,79 @@
+The inteligent spell cheker is designd to analize a document and find incorret words.
+It uses the Levenshtein edit distnce algorithim to compare misspelled words with
+correct words stored inside a dictionery.
+
+A spell chekcing system should be able to detect common speling mistakes and
+automaticaly suggest the most apropriate correction. The system reads the
+document careflly, seperates the words, and checks each word against the
+dictionary.
+
+Dynamic programing is an importent concept used in this project. The
+Levenshtein algorithim calculates the minimum number of edit operatons required
+to transform one word into another word. These operatons include insertion,
+deletion, and substituion.
+
+For example, the word recieve may be corrected to receive. The word adress may
+be corrected to address. The word becaus may be corrected to because. The word
+seperate may be corrected to separate. The word begining may be corrected to
+beginning.
+
+The spell checker should also handle words such as libary, frend, studing,
+hapy, yestarday, mesage, freind, writen, recieve, beleive, goverment, enviroment,
+developement, managment, programing, langauge, algoritm, dictionery, cheking,
+correctiong, automaticaly, sucessful, importent, differnt, possiblity, knowlege,
+computr, scince, enginering, universty, collge, educaton, technolgy, informaton,
+aplication, softwere, hardwere, securty, netwrok, databse, systm, proces, memmory,
+functon, variabel, conditon, statment, loop, aray, strng, interger, charater,
+methd, object, clas, inheritence, polymorphism, encapsulaton, abstarction,
+interface, excepetion, compiliation, debuggng, executon, algoritm, complexity,
+efficency, performnce, resourse, structure, dataa, nodee, treee, grap, stackk,
+queu, searchng, sortng, insert, delet, substitue, comparision, calculaton,
+distancee, matrix, recurson, iteraton, dynamicc, optimizaton, soluton, resultt.
+
+A good computer science student should understand how data structures and
+algorithms work together to solve real world problems. A dictionary can be
+represented using a trie because a trie provides efficient prefix based
+searching. A hash set can also be used to quickly determine whether a word
+already exists in the dictionary.
+
+The document processing part of the program reads the input file and examines
+every word one by one. When an incorret word is found, the program searches for
+a suitable word from the dictionary. It calculates the edit distance between
+the incorrect word and possible dictionary words and selects the word with
+the smallest distance.
+
+The system should not make a correction when the distance is too large. This
+prevents completely unrelated words from being replaced by random dictionary
+words. A maximum edit distance is therefore used to make the correction more
+reliable.
+
+Insertion means adding a missing character to a word. Deletion means removing
+an extra character from a word. Substitution means replacing one character
+with another character. The Levenshtein distance can represent all three types
+of operations.
+
+For example, an insertion can transform libary into library. A deletion can
+transform studdy into study. A substitution can transform hapy into happy.
+Several operations may also be required for a single misspelled word.
+
+The project also preserves punctuation and spaces while creating a corrected
+document. The original input file is not changed. Instead, a new corrected
+file is created automatically in the same folder.
+
+This intelligent spell checker demonstrates several important DSA concepts.
+It combines trie data structures, hash sets, hash maps, dynamic programming,
+backtracking, string processing, file handling, and searching techniques.
+
+The main goal of this project is to demonstrate how an algorithm can solve a
+practical problem. Instead of simply giving a nearest dictionary word in the
+console, the program reads an entire document, analyzes its contents, corrects
+the detected spelling mistakes, and creates a new corrected document.
+
+The final corrected document can then be opened and compared with the original
+document. The program also displays the total number of words, number of
+incorrect words, number of corrections made, suggested corrections, edit
+distance, and the individual edit operations.
+
+This project shows how a simple spelling correction idea can be developed into
+a complete document processing application using fundamental data structures
+and algorithms.
